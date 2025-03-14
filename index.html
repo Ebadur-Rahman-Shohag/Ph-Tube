@@ -6,10 +6,10 @@
     <title>Ph-Tube</title>
     <!-- css -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-        body {
-          font-family: 'Inter', sans-serif;
-        }
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+      }
     </style>
     <!-- daisyUi and Tailwind -->
     <link
@@ -20,6 +20,238 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <h1 class="text-3xl font-bold">Hello to Ph-Tube</h1>
+    <!-- header section -->
+    <header>
+      <nav
+        class="container max-w-screen-xl mx-auto flex flex-col lg:flex-row justify-between items-center space-y-4 py-4 lg:py-8 border-b-2 border-b-[#17171733]"
+      >
+        <div>
+          <img class="w-[150px]" src="./assets/Logo.png" alt="logo image" />
+        </div>
+        <div>
+          <button class="bg-[#25252533] px-2 lg:px-3 py-3 rounded-md">
+            Sort By View
+          </button>
+        </div>
+        <div>
+          <button class="bg-[#FF1F3D] px-3 py-2 rounded text-white">
+            Blog
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- categories section -->
+    <section
+      class="mt-8 container max-w-screen-xl mx-auto flex justify-center items-center"
+    >
+      <div class="space-x-5">
+        <button class="btn btn-sm lg:btn bg-[#FF1F3D] text-white">All</button>
+        <button class="btn btn-sm lg:btn hover:bg-[#FF1F3D] hover:text-white">
+          Music
+        </button>
+        <button class="btn btn-sm lg:btn hover:bg-[#FF1F3D] hover:text-white">
+          Comedy
+        </button>
+        <button class="btn btn-sm lg:btn hover:bg-[#FF1F3D] hover:text-white">
+          Drawing
+        </button>
+      </div>
+    </section>
+    <!-- card section -->
+    <section class="mt-10 container max-w-screen-xl mx-auto">
+      <!-- cards container -->
+      <div class="grid grid-cols-1 lg:grid-cols-4 px-2 lg:px-2 gap-5">
+        <!-- card -->
+        <div class="card bg-base-100 shadow-sm">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes"
+            />
+          </figure>
+          <div class="card-body">
+            <!--profile description container -->
+            <div class="flex space-x-4">
+              <!-- avatar container -->
+              <div class="avatar">
+                <div
+                  class="ring-primary ring-offset-base-100 w-10 h-10 rounded-full ring ring-offset-2"
+                >
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                  />
+                </div>
+              </div>
+              <!-- description container -->
+              <div class="space-y-4">
+                <!-- title -->
+                <h2 class="card-title">Card Title</h2>
+                <!-- name, verification badge and views container -->
+                <div class="space-y-2">
+                  <!-- name and badge container -->
+                  <div class="flex space-x-2">
+                    <p class="font-normal text-[14px] text-[#171717B3]">
+                      Awlad Hossain
+                    </p>
+                    <img
+                      class="h-5 w-5"
+                      src="./assets/verifiedIcon.png"
+                      alt="verified logo"
+                    />
+                  </div>
+                  <!-- views -->
+                  <p class="font-normal text-[14px] text-[#171717B3]">
+                    91 k Views
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="card bg-base-100 shadow-sm">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes"
+            />
+          </figure>
+          <div class="card-body">
+            <!--profile description container -->
+            <div class="flex space-x-4">
+              <!-- avatar container -->
+              <div class="avatar">
+                <div
+                  class="ring-primary ring-offset-base-100 w-10 h-10 rounded-full ring ring-offset-2"
+                >
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                  />
+                </div>
+              </div>
+              <!-- description container -->
+              <div class="space-y-4">
+                <!-- title -->
+                <h2 class="card-title">Card Title</h2>
+                <!-- name, verification badge and views container -->
+                <div class="space-y-2">
+                  <!-- name and badge container -->
+                  <div class="flex space-x-2">
+                    <p class="font-normal text-[14px] text-[#171717B3]">
+                      Awlad Hossain
+                    </p>
+                    <img
+                      class="h-5 w-5"
+                      src="./assets/verifiedIcon.png"
+                      alt="verified logo"
+                    />
+                  </div>
+                  <!-- views -->
+                  <p class="font-normal text-[14px] text-[#171717B3]">
+                    91 k Views
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="card bg-base-100 shadow-sm">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes"
+            />
+          </figure>
+          <div class="card-body">
+            <!--profile description container -->
+            <div class="flex space-x-4">
+              <!-- avatar container -->
+              <div class="avatar">
+                <div
+                  class="ring-primary ring-offset-base-100 w-10 h-10 rounded-full ring ring-offset-2"
+                >
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                  />
+                </div>
+              </div>
+              <!-- description container -->
+              <div class="space-y-4">
+                <!-- title -->
+                <h2 class="card-title">Card Title</h2>
+                <!-- name, verification badge and views container -->
+                <div class="space-y-2">
+                  <!-- name and badge container -->
+                  <div class="flex space-x-2">
+                    <p class="font-normal text-[14px] text-[#171717B3]">
+                      Awlad Hossain
+                    </p>
+                    <img
+                      class="h-5 w-5"
+                      src="./assets/verifiedIcon.png"
+                      alt="verified logo"
+                    />
+                  </div>
+                  <!-- views -->
+                  <p class="font-normal text-[14px] text-[#171717B3]">
+                    91 k Views
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="card bg-base-100 shadow-sm">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes"
+            />
+          </figure>
+          <div class="card-body">
+            <!--profile description container -->
+            <div class="flex space-x-4">
+              <!-- avatar container -->
+              <div class="avatar">
+                <div
+                  class="ring-primary ring-offset-base-100 w-10 h-10 rounded-full ring ring-offset-2"
+                >
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                  />
+                </div>
+              </div>
+              <!-- description container -->
+              <div class="space-y-4">
+                <!-- title -->
+                <h2 class="card-title">Card Title</h2>
+                <!-- name, verification badge and views container -->
+                <div class="space-y-2">
+                  <!-- name and badge container -->
+                  <div class="flex space-x-2">
+                    <p class="font-normal text-[14px] text-[#171717B3]">
+                      Awlad Hossain
+                    </p>
+                    <img
+                      class="h-5 w-5"
+                      src="./assets/verifiedIcon.png"
+                      alt="verified logo"
+                    />
+                  </div>
+                  <!-- views -->
+                  <p class="font-normal text-[14px] text-[#171717B3]">
+                    91 k Views
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
